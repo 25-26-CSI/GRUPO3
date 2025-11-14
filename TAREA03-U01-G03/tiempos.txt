@@ -1,0 +1,417 @@
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> python algoritmo-simetrico-rc2.py
+======================================================================
+DEMOSTRACIÓN DEL ALGORITMO RC2 (Rivest Cipher 2)
+======================================================================
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000103 segundos
+   Caracteres leídos: 80
+
+2. Clave generada - Tiempo: 0.000011 segundos
+   Clave (hex): dc93f7da940b1d8baf1ad1b92debb6e7...
+
+3. Cifrado completado - Tiempo: 0.017250 segundos
+   Bytes cifrados: 88
+   Cifrado (hex): 345d9cf6216bceb665eab59a0a1e78b7aeec6023...
+
+4. Descifrado completado - Tiempo: 0.000054 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.017418 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000159 segundos
+   Caracteres leídos: 800
+
+2. Clave generada - Tiempo: 0.000004 segundos
+   Clave (hex): d05466f9377aa081d5526cfc9bc411e0...
+
+3. Cifrado completado - Tiempo: 0.000065 segundos
+   Bytes cifrados: 808
+   Cifrado (hex): 7e414ec7c32e994f6efb54bfcdd42abf1f5444c2...
+
+4. Descifrado completado - Tiempo: 0.000038 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000266 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000132 segundos
+   Caracteres leídos: 8000
+
+2. Clave generada - Tiempo: 0.000001 segundos
+   Clave (hex): 8ce4528c3f145b01254ac6e694d27262...
+
+3. Cifrado completado - Tiempo: 0.000167 segundos
+   Bytes cifrados: 8008
+   Cifrado (hex): 87087f1ed604b1bceaea1d88c224eeee4ed0e97a...
+
+4. Descifrado completado - Tiempo: 0.000088 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000389 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.011731 segundos
+   Caracteres leídos: 80000
+
+2. Clave generada - Tiempo: 0.000004 segundos
+   Clave (hex): 026bd8560fbc53d9b15f5536b28d4546...
+
+3. Cifrado completado - Tiempo: 0.001348 segundos
+   Bytes cifrados: 80008
+   Cifrado (hex): bd9e1feab61cd0365af67c9f3fe0ee1e68255d51...
+
+4. Descifrado completado - Tiempo: 0.000634 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.013717 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.011285 segundos
+   Caracteres leídos: 800000
+
+2. Clave generada - Tiempo: 0.000010 segundos
+   Clave (hex): 6184ef768f54c09e515d353806e8f79f...
+
+3. Cifrado completado - Tiempo: 0.013599 segundos
+   Bytes cifrados: 800008
+   Cifrado (hex): e6f468d9d46c2a845fbc20db14ebfbc577c1555d...
+
+4. Descifrado completado - Tiempo: 0.006824 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.031718 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.018370 segundos
+   Caracteres leídos: 8000000
+
+2. Clave generada - Tiempo: 0.000010 segundos
+   Clave (hex): 8336237d0e85ad7c8c629c85625be344...
+
+3. Cifrado completado - Tiempo: 0.126751 segundos
+   Bytes cifrados: 8000008
+   Cifrado (hex): 8cda989f08eb27444f5bd8f45a226b0881a0ab1e...
+
+4. Descifrado completado - Tiempo: 0.067015 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.212146 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.058689 segundos
+   Caracteres leídos: 80000000
+
+2. Clave generada - Tiempo: 0.000007 segundos
+   Clave (hex): 800482b6265bf5bf13d916bfd3795f6f...
+
+3. Cifrado completado - Tiempo: 1.275784 segundos
+   Bytes cifrados: 80000008
+   Cifrado (hex): 43849236b254426dc9aafcd82630e12133328944...
+
+4. Descifrado completado - Tiempo: 0.655113 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 1.989593 segundos
+
+======================================================================
+PROCESO COMPLETADO
+======================================================================
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> 
+
+
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> python algoritmo-asimetrico-ntru.py
+======================================================================
+DEMOSTRACIÓN DEL ALGORITMO NTRU
+======================================================================
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000090 segundos
+   Caracteres leídos: 80
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000140 segundos
+   Clave pública: [29.  0.  0. 29.  3.]...
+   Clave privada f: [ 1  1 -2  1  1]...
+
+3. Cifrado completado - Tiempo: 0.000054 segundos
+   Mensaje cifrado: [ 3. 29.  2.  3. 27.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000049 segundos
+   Mensaje descifrado: ÿÿÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.000334 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000092 segundos
+   Caracteres leídos: 800
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000056 segundos
+   Clave pública: [ 0.  3. 29.  0.  0.]...
+   Clave privada f: [1 1 1 1 1]...
+
+3. Cifrado completado - Tiempo: 0.000032 segundos
+   Mensaje cifrado: [29.  3. 28. 29.  7.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000028 segundos
+   Mensaje descifrado: ÿÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.000207 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000118 segundos
+   Caracteres leídos: 8000
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000039 segundos
+   Clave pública: [ 0.  3.  3.  0. 29.]...
+   Clave privada f: [ 1 -2  1  1  4]...
+
+3. Cifrado completado - Tiempo: 0.000058 segundos
+   Mensaje cifrado: [ 6.  0. 31.  0.  1.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000123 segundos
+   Mensaje descifrado: ÿÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.000338 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000149 segundos
+   Caracteres leídos: 80000
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000048 segundos
+   Clave pública: [29.  0.  0. 29.  0.]...
+   Clave privada f: [ 1  1  1 -2  1]...
+
+3. Cifrado completado - Tiempo: 0.000028 segundos
+   Mensaje cifrado: [26.  3. 31.  0.  4.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000038 segundos
+   Mensaje descifrado: ÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.000263 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000575 segundos
+   Caracteres leídos: 800000
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000045 segundos
+   Clave pública: [ 0. 29.  3.  0.  0.]...
+   Clave privada f: [ 1 -2  1  1  4]...
+
+3. Cifrado completado - Tiempo: 0.000045 segundos
+   Mensaje cifrado: [29.  3. 28.  3. 27.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000040 segundos
+   Mensaje descifrado: ÿÿÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.000703 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.006236 segundos
+   Caracteres leídos: 8000000
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000123 segundos
+   Clave pública: [ 0.  0.  3. 29.  0.]...
+   Clave privada f: [1 4 1 1 1]...
+
+3. Cifrado completado - Tiempo: 0.000057 segundos
+   Mensaje cifrado: [29.  0. 31. 29.  4.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000073 segundos
+   Mensaje descifrado: ÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.006489 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.055605 segundos
+   Caracteres leídos: 80000000
+   (NOTA: NTRU cifrará solo los primeros 11 caracteres)
+
+2. Claves generadas - Tiempo: 0.000123 segundos
+   Clave pública: [ 3.  0.  0.  0. 29.]...
+   Clave privada f: [-2  1  4  1 -2]...
+
+3. Cifrado completado - Tiempo: 0.000067 segundos
+   Mensaje cifrado: [ 0.  0. 31. 29.  4.]... (polinomio)
+
+4. Descifrado completado - Tiempo: 0.000038 segundos
+   Mensaje descifrado: ÿÿÿÿ...
+   Verificación: PARCIAL
+
+TIEMPO TOTAL: 0.055833 segundos
+
+======================================================================
+PROCESO COMPLETADO
+======================================================================
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> 
+
+
+
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> python funcion-hash-BLAKE2b.py
+======================================================================
+DEMOSTRACIÓN DE BLAKE2b
+======================================================================
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000109 segundos
+   Caracteres leídos: 80
+
+2. Clave generada - Tiempo: 0.000008 segundos
+   Clave (hex): d9a317157c0eabbe941efb5ddbe719b5a3375263...
+
+3. Hash calculado - Tiempo: 0.000013 segundos
+   Hash BLAKE2b: 9c59674df58e074d9407dbd883391a37aa0c8ec6fc4639bac8db7e6a6d14dd0589bfc768500cc75a...
+
+4. Verificación completada - Tiempo: 0.000007 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000137 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000109 segundos
+   Caracteres leídos: 800
+
+2. Clave generada - Tiempo: 0.000005 segundos
+   Clave (hex): 4368719320519b1567420acdb48ba2d177f74b8d...
+
+3. Hash calculado - Tiempo: 0.000005 segundos
+   Hash BLAKE2b: b71b554a0be34fb64582f6285c8dc3182f40465662917bb5e41aa56431a3003c6c6039df3321e89d...
+
+4. Verificación completada - Tiempo: 0.000003 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000123 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000084 segundos
+   Caracteres leídos: 8000
+
+2. Clave generada - Tiempo: 0.000001 segundos
+   Clave (hex): 5cd2be90e0fdae467d31c64e183b7e2c6cc0755b...
+
+3. Hash calculado - Tiempo: 0.000015 segundos
+   Hash BLAKE2b: 2ea85d3dac1ab38abddb436409f2066487704e306457cfc303601422d15dd851a0bf7910ee3ff54c...
+
+4. Verificación completada - Tiempo: 0.000013 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000113 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000162 segundos
+   Caracteres leídos: 80000
+
+2. Clave generada - Tiempo: 0.000004 segundos
+   Clave (hex): 238fef0ffff9232f4682961033c19a6c5d0cbe12...
+
+3. Hash calculado - Tiempo: 0.000075 segundos
+   Hash BLAKE2b: ba1ba4f3ce5030748a279c906cdffff20e8040ff40170267bdb59ecb4b9df04b7e37e0009a0bd592...
+
+4. Verificación completada - Tiempo: 0.000086 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.000328 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_100000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.000568 segundos
+   Caracteres leídos: 800000
+
+2. Clave generada - Tiempo: 0.000001 segundos
+   Clave (hex): 5ebe2d70c4a783370a5b8f837e0f7da4c5118cd2...
+
+3. Hash calculado - Tiempo: 0.000942 segundos
+   Hash BLAKE2b: 625f05c016ad0e4b1064f96dccc4c419af7fdc65f043603abc21106c2445a214d2d957fb01571ddb...
+
+4. Verificación completada - Tiempo: 0.000957 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.002468 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_1000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.007108 segundos
+   Caracteres leídos: 8000000
+
+2. Clave generada - Tiempo: 0.000005 segundos
+   Clave (hex): 9f2d796bcf3e2a15faa261a1a943cc9c152b4bcc...
+
+3. Hash calculado - Tiempo: 0.009147 segundos
+   Hash BLAKE2b: 9acfdb5192e57e57188c1181d26efee88118317a9de55c69d2e0124dfcfe497e674e45ba7323bcf9...
+
+4. Verificación completada - Tiempo: 0.009313 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.025573 segundos
+
+======================================================================
+PROCESANDO ARCHIVO: mensaje_10000000_palabras.txt
+======================================================================
+1. Lectura completada - Tiempo: 0.057523 segundos
+   Caracteres leídos: 80000000
+
+2. Clave generada - Tiempo: 0.000010 segundos
+   Clave (hex): ad318e0d6f317b6b1a1b27628fd0dbdaa3c682b1...
+
+3. Hash calculado - Tiempo: 0.100355 segundos
+   Hash BLAKE2b: 75cb126ed9515a30bfc11690f020d3e1f6e95d3cef643a16924819df962b480331127cc9b97c6e15...
+
+4. Verificación completada - Tiempo: 0.095628 segundos
+   Verificación: OK
+
+TIEMPO TOTAL: 0.253516 segundos
+
+======================================================================
+PROCESO COMPLETADO
+======================================================================
+(.venv) PS C:\Proyectos\GRUPO3\TAREA03-U01-G03> 
