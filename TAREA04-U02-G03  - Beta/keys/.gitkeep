@@ -1,0 +1,2 @@
+Este archivo mantiene el directorio keys/ en el control de versiones.
+Las claves generadas (.pem) están excluidas en .gitignore por seguridad.

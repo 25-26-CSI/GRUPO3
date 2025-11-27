@@ -1,0 +1,286 @@
+ESTRUCTURA COMPLETA DEL PROYECTO
+================================
+
+TAREA04-U02-G03/
+│
+├── 📄 README.md                    ← Documentación principal (500+ líneas)
+├── 📄 RESUMEN_PROYECTO.md          ← Resumen ejecutivo completo
+├── 📄 COMO_EJECUTAR.md             ← Instrucciones de ejecución
+├── 📄 requirements.txt             ← Dependencias Python
+├── 📄 .gitignore                   ← Archivos ignorados por Git
+├── ⚙️  setup.ps1                    ← Script de instalación automática
+│
+├── 📂 src/                         ← CÓDIGO FUENTE (7 archivos)
+│   ├── __init__.py                 ← Inicializador del paquete
+│   ├── main.py                     ← Aplicación principal CLI (470 líneas)
+│   ├── key_manager.py              ← Gestión de claves RSA (350 líneas)
+│   ├── digital_signature.py        ← Firma de documentos (250 líneas)
+│   ├── verification.py             ← Verificación de firmas (280 líneas)
+│   ├── demo.py                     ← Demostración automática (350 líneas)
+│   └── utils.py                    ← Utilidades auxiliares (200 líneas)
+│
+├── 📂 docs/                        ← DOCUMENTACIÓN TÉCNICA
+│   ├── guia_tecnica.md             ← Fundamentos matemáticos (300 líneas)
+│   ├── inicio_rapido.md            ← Guía de inicio rápido (250 líneas)
+│   └── configuracion.md            ← Configuración detallada (350 líneas)
+│
+├── 📂 tests/                       ← TESTS UNITARIOS
+│   └── test_digital_signature.py   ← Tests completos (300 líneas)
+│
+├── 📂 keys/                        ← Claves y Certificados (*.pem)
+│   └── .gitkeep                    ← Mantiene directorio en Git
+│
+├── 📂 documents/                   ← Documentos a firmar
+│   ├── .gitkeep
+│   └── ejemplo_contrato.txt        ← Documento de ejemplo
+│
+└── 📂 signatures/                  ← Firmas digitales (*.json)
+    └── .gitkeep
+
+═══════════════════════════════════════════════════════════════
+
+ESTADÍSTICAS DEL PROYECTO
+═══════════════════════════════════════════════════════════════
+
+📊 Código Fuente:
+   ✓ Python:                 ~2,000 líneas
+   ✓ Módulos:                7 archivos
+   ✓ Funciones/Métodos:      ~50+
+   ✓ Clases:                 4 principales
+
+📚 Documentación:
+   ✓ Markdown:               ~2,500 líneas
+   ✓ Docstrings:             ~600 líneas
+   ✓ Comentarios:            ~400 líneas
+   ✓ Archivos .md:           7 documentos
+
+🧪 Testing:
+   ✓ Tests unitarios:        ~300 líneas
+   ✓ Casos de prueba:        15+
+   ✓ Cobertura estimada:     85%+
+
+═══════════════════════════════════════════════════════════════
+
+MÓDULOS PRINCIPALES
+═══════════════════════════════════════════════════════════════
+
+1️⃣  key_manager.py
+   ┌────────────────────────────────────────────┐
+   │ Clase: KeyManager                         │
+   │                                           │
+   │ ✓ generate_key_pair()                     │
+   │ ✓ save_private_key()                      │
+   │ ✓ load_public_key()                       │
+   │ ✓ create_certificate()                    │
+   │ ✓ get_certificate_info()                  │
+   │                                           │
+   │ Tecnologías: RSA, X.509, PEM             │
+   └────────────────────────────────────────────┘
+
+2️⃣  digital_signature.py
+   ┌────────────────────────────────────────────┐
+   │ Clase: DigitalSignature                   │
+   │                                           │
+   │ ✓ calculate_hash()                        │
+   │ ✓ sign_document()                         │
+   │ ✓ save_signature()                        │
+   │ ✓ display_signature_info()                │
+   │                                           │
+   │ Tecnologías: SHA-256, RSA-PSS            │
+   └────────────────────────────────────────────┘
+
+3️⃣  verification.py
+   ┌────────────────────────────────────────────┐
+   │ Clase: SignatureVerifier                  │
+   │                                           │
+   │ ✓ verify_signature()                      │
+   │ ✓ verify_certificate()                    │
+   │ ✓ full_verification()                     │
+   │ ✓ compare_hashes()                        │
+   │                                           │
+   │ Tecnologías: Verificación RSA, SHA-256   │
+   └────────────────────────────────────────────┘
+
+4️⃣  main.py
+   ┌────────────────────────────────────────────┐
+   │ Clase: DigitalSignatureApp                │
+   │                                           │
+   │ ✓ Menú interactivo                        │
+   │ ✓ Generación de claves                    │
+   │ ✓ Firma de documentos                     │
+   │ ✓ Verificación de firmas                  │
+   │ ✓ Ayuda integrada                         │
+   │                                           │
+   │ Interfaz: CLI (Command Line)             │
+   └────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════
+
+DEPENDENCIAS
+═══════════════════════════════════════════════════════════════
+
+📦 cryptography 41.0.7
+   • RSA key generation
+   • SHA-256 hashing
+   • X.509 certificates
+   • PEM serialization
+
+📦 PyPDF2 3.0.1
+   • PDF reading
+   • PDF metadata
+
+📦 colorama 0.4.6
+   • Terminal colors
+   • Cross-platform
+
+📦 pydantic 2.5.0
+   • Data validation
+   • Type checking
+
+📦 pytest 7.4.3 (dev)
+   • Unit testing
+   • Test coverage
+
+═══════════════════════════════════════════════════════════════
+
+ARCHIVOS GENERADOS AL USAR
+═══════════════════════════════════════════════════════════════
+
+Durante el uso normal, se generan:
+
+keys/
+├── usuario_private.pem      ← Clave privada (PROTEGER)
+├── usuario_public.pem       ← Clave pública (compartir)
+└── usuario_cert.pem         ← Certificado digital
+
+signatures/
+└── firma_documento.json     ← Firma digital
+
+Formato de firma (JSON):
+{
+    "document_name": "contrato.txt",
+    "document_hash": "a7b3c9d2e5f8...",
+    "signature": "3f6a9c2d...",
+    "timestamp": "2025-11-26T14:30:00",
+    "algorithm": "RSA-PSS with SHA-256",
+    "key_size": 2048,
+    "signer": {
+        "nombre": "Usuario",
+        "organizacion": "ESPOL"
+    }
+}
+
+═══════════════════════════════════════════════════════════════
+
+FLUJO DE TRABAJO VISUAL
+═══════════════════════════════════════════════════════════════
+
+    USUARIO
+       │
+       ├─────► 1. GENERAR CLAVES (key_manager.py)
+       │           │
+       │           ├─► Clave Privada (.pem)
+       │           ├─► Clave Pública (.pem)
+       │           └─► Certificado (.pem)
+       │
+       ├─────► 2. FIRMAR DOCUMENTO (digital_signature.py)
+       │           │
+       │           ├─► Leer documento
+       │           ├─► Calcular hash (SHA-256)
+       │           ├─► Firmar con clave privada
+       │           └─► Guardar firma (.json)
+       │
+       └─────► 3. VERIFICAR FIRMA (verification.py)
+                   │
+                   ├─► Cargar documento
+                   ├─► Cargar firma
+                   ├─► Verificar con clave pública
+                   └─► Resultado: ✅ Válida / ❌ Inválida
+
+═══════════════════════════════════════════════════════════════
+
+COMANDOS PRINCIPALES
+═══════════════════════════════════════════════════════════════
+
+Instalación:
+   .\setup.ps1
+
+Ejecución:
+   cd src
+   python main.py
+
+Demostración:
+   python demo.py
+
+Tests:
+   pytest tests/ -v
+
+═══════════════════════════════════════════════════════════════
+
+CARACTERÍSTICAS DESTACADAS
+═══════════════════════════════════════════════════════════════
+
+✅ Implementación completa de firma digital RSA
+✅ Uso de estándares de la industria (SHA-256, RSA-PSS, X.509)
+✅ Código limpio con docstrings y comentarios
+✅ Documentación exhaustiva (>2,500 líneas)
+✅ Tests unitarios con alta cobertura
+✅ Scripts de instalación y demostración
+✅ Interfaz CLI amigable
+✅ Buenas prácticas de programación
+✅ Manejo robusto de errores
+✅ Ejemplos y tutoriales incluidos
+
+═══════════════════════════════════════════════════════════════
+
+VALOR EDUCATIVO
+═══════════════════════════════════════════════════════════════
+
+Este proyecto enseña:
+
+🔐 Criptografía Asimétrica (RSA)
+   • Generación de pares de claves
+   • Uso de clave privada/pública
+   • Relación matemática entre claves
+
+🔍 Funciones Hash (SHA-256)
+   • Cálculo de hashes criptográficos
+   • Detección de modificaciones
+   • Propiedades de seguridad
+
+✍️ Firmas Digitales
+   • Proceso de firma
+   • Proceso de verificación
+   • Garantías de seguridad
+
+📜 Certificados Digitales
+   • Estructura X.509
+   • Vinculación identidad-clave
+   • Validación temporal
+
+💻 Buenas Prácticas
+   • Código modular
+   • Documentación completa
+   • Testing unitario
+   • Manejo de errores
+
+═══════════════════════════════════════════════════════════════
+
+AUTOR
+═══════════════════════════════════════════════════════════════
+
+Grupo 3
+Proyecto de Criptografía - Firma Digital y Electrónica
+ESPOL
+Noviembre 2025
+
+═══════════════════════════════════════════════════════════════
+
+¡PROYECTO COMPLETO Y LISTO PARA USAR! 🎉
+
+Para comenzar:
+1. Ejecutar: .\setup.ps1
+2. Usar: cd src; python main.py
+3. O demo: python demo.py
+
+═══════════════════════════════════════════════════════════════

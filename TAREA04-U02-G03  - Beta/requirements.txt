@@ -1,0 +1,14 @@
+# Dependencias del proyecto de Firma Digital
+# ==========================================
+
+# Biblioteca de criptografia para Python
+cryptography>=41.0.0
+
+# Para trabajar con PDFs
+PyPDF2>=3.0.0
+
+# Para mejorar la interfaz CLI
+colorama>=0.4.6
+
+# Testing (opcional, para desarrollo)
+pytest>=7.4.0

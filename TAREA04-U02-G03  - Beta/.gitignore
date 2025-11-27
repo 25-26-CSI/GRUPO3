@@ -1,0 +1,49 @@
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Archivos sensibles (claves privadas)
+keys/*.pem
+keys/*.key
+!keys/.gitkeep
+
+# Documentos de prueba
+documents/*
+!documents/.gitkeep
+!documents/ejemplo.txt
+
+# Firmas generadas
+signatures/*
+!signatures/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

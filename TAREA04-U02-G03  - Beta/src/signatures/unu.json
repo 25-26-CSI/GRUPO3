@@ -1,0 +1,13 @@
+{
+    "document_name": "ejemplo_contrato.txt",
+    "document_hash": "94791bfdda7681bd581085b7d558ad74ba4f6b71eccc9dda2f6dd4bced9e2823",
+    "signature": "5cac4fa01d71078bd7e0913bd6897de4e0743e62f3fe8340c6ec9c5576a5406c0dc659a384facf7a635df4e11ecee5229698c8eaf026cee74d2a870dc8003172e50df7ba79170eb981fb50b171ca02a1ebc7f1ab2ab7951d0a867029f7ac66911aa6bd726cabc7e533744a3267a91963d00fe46408034e8b589bbde471f0f75c5dc4defbb0792c6bb723908d22b17bf5aa17314732db851f8341c6c3b67a7fbf66b9c06c638a56d47a171e86b224fe60cfe888de2ad6c629ea9752b9d3cd424521fc906dd0578702058562cd0cfc2da049b8aed924b8260b564fe98f056bd6a13e45b5d87f3d2bc207413f6c2334989f26d79993939c02ecf6753e3b501efaa1",
+    "timestamp": "2025-11-26T18:15:07.887955",
+    "algorithm": "RSA-PSS with SHA-256",
+    "key_size": 2048,
+    "signer": {
+        "nombre": "Ariel Elizalde",
+        "organizacion": "UCE",
+        "certificado_serie": "173463562752351099370344937428194793058411371578"
+    }
+}
