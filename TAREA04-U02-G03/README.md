@@ -75,61 +75,6 @@ Si alguien abre la carta y cambia el contenido, el lacre se rompe y se nota la a
 pip install cryptography
 ```
 
-## 📝 Sobre tu Código Original
-
-Tu código está **casi correcto**, solo hay un pequeño detalle: el manejo de excepciones debería ser más específico. Aquí está la versión mejorada:
-
-### ❌ Tu código (con mejora sugerida):
-
-```python
-# 3. Verificar la firma
-try:
-    public_key.verify(firma, mensaje, hashes.SHA256())
-    print("\n✔ La firma es válida")
-except:  # ← Mejor usar InvalidSignature
-    print("\n❌ La firma NO es válida")
-```
-
-### ✅ Versión mejorada:
-
-```python
-from cryptography.exceptions import InvalidSignature
-
-# 3. Verificar la firma
-try:
-    public_key.verify(firma, mensaje, hashes.SHA256())
-    print("\n✔ La firma es válida")
-except InvalidSignature:  # ← Más específico
-    print("\n❌ La firma NO es válida")
-```
-
-## 🚀 Archivos de Ejemplo
-
-Este proyecto incluye dos ejemplos:
-
-1. **`firma_dsa_ejemplo.py`**: Ejemplo básico con explicaciones paso a paso
-2. **`firma_dsa_interactivo.py`**: Simulación de un escenario real (Alice y Bob)
-
-### Ejecutar los ejemplos:
-
-```bash
-# Ejemplo básico
-python firma_dsa_ejemplo.py
-
-# Ejemplo interactivo (más divertido)
-python firma_dsa_interactivo.py
-```
-
-## 🔍 ¿Qué aprenderás?
-
-Con estos ejemplos verás:
-
-- ✓ Cómo generar claves DSA
-- ✓ Cómo firmar un mensaje
-- ✓ Cómo verificar una firma
-- ✓ Qué pasa si alguien modifica el mensaje
-- ✓ Por qué no se puede falsificar una firma
-
 ## 🛡️ Seguridad
 
 **¿Es seguro DSA?**
@@ -148,11 +93,6 @@ Con estos ejemplos verás:
 | **Clave Pública** | Compartida con todos, usada para verificar |
 | **Firma** | Resultado de aplicar tu clave privada al hash del mensaje |
 
-## 🎓 Ejercicios Adicionales
-
-1. Modifica el mensaje después de firmarlo y verifica qué pasa
-2. Intenta verificar con la clave pública incorrecta
-3. Firma varios mensajes y observa que cada firma es diferente
 
 ## 📚 Referencias
 
@@ -161,4 +101,4 @@ Con estos ejemplos verás:
 
 ---
 
-**¡Diviértete experimentando con firmas digitales! 🎉**
+
